@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
 .inputData {
     margin-bottom: 20px;
 }
@@ -19,7 +21,8 @@
 .button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background: linear-gradient(90deg, #1e1d1d, #2b2b2b);
+    font-family: 'Inter', sans-serif;
     border: none;
     color: #fff;
     font-size: 16px;

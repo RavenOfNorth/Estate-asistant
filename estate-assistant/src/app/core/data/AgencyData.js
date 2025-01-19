@@ -32,3 +32,8 @@ export function getAgencyFraction(cost, percent, exchangeRate) {
 
     return parseFloat(usdAgencyFraction);
 }
+
+export function getFlatMeterCost(cost, square) {
+    let flatMeterCost = (cost /square).toFixed(2);
+    return flatMeterCost;
+}
