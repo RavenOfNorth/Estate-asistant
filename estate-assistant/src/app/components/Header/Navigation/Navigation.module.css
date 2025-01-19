@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+.headerNavigation {
+
+}
+
+.navigation {
+    list-style-type: none;
+}
+
+.navigationItem {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigationItem a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Inter';
+    color: antiquewhite;
+}
+
+.navigationItem:hover {
+
+}

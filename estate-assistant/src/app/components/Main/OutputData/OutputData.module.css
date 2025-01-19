@@ -1,0 +1,17 @@
+.resultData {
+    margin-top: 20px;
+}
+
+.resultValue {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.result label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
