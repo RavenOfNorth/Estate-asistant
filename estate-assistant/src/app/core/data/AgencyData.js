@@ -1,4 +1,11 @@
-export function defaultAgencyPercent(baseCost) {
+export function defaultAgencyPercent(costUSD, rateUSD) {
+
+    const baseValue = 42;
+
+    const costBYN = costUSD * rateUSD;
+
+    const baseCost = costBYN / baseValue;
+
     const ranges = [
         { max: 4200, percent: 3.0 },
         { max: 5000, percent: 2.5 },
@@ -27,10 +34,10 @@ export function defaultAgencyPercent(baseCost) {
 }
 
 export function getAgencyFraction(cost, percent, exchangeRate) {
-    let bynAgencyFraction = (cost * (percent / 100)).toFixed(2);
-    let usdAgencyFraction = (bynAgencyFraction / exchangeRate).toFixed(2);
+    let agencyFraction = (cost * (percent / 100)).toFixed(2);
+    // let usdAgencyFraction = (bynAgencyFraction / exchangeRate).toFixed(2);
 
-    return parseFloat(usdAgencyFraction);
+    return parseFloat(agencyFraction);
 }
 
 export function getFlatMeterCost(cost, square) {

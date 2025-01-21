@@ -18,9 +18,9 @@ export default function CalculatorWrapper(props) {
     });
 
     const handleCalculate = (cost, square, exchangeRate) => {
-        const agencyPercent = defaultAgencyPercent(cost);
+        const agencyPercent = defaultAgencyPercent(cost, exchangeRate);
         const flatMeterCost = getFlatMeterCost(cost, square);
-        const agencyFraction = getAgencyFraction(cost, square, agencyPercent);
+        const agencyFraction = getAgencyFraction(cost, agencyPercent);
         const sellerFraction = cost - agencyFraction;
 
         setResults({
