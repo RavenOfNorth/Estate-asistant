@@ -1,18 +1,18 @@
 import styles from './OutputData.module.css'
 
-export default function OutputData() {
+export default function OutputData({results}) {
     return(
         <div className={styles.resultData}>
             <label htmlFor="adr-cost">Стоимость 1 кв.м.</label>
-            <p className={styles.resultValue} id="adr-cost"></p>
+            <p className={styles.resultValue} id="adr-cost">{results.flatMeterCost}</p>
             <label htmlFor="transaction-fee">Процент от сделки (%)</label>
-            <p className={styles.resultValue} id="transaction-fee"></p>
+            <p className={styles.resultValue} id="transaction-fee">{results.agencyPercent}</p>
             <label htmlFor="agency-fraction">Доля агенства (USD)</label>
-            <p className={styles.resultValue} id="agency-fraction"></p>
+            <p className={styles.resultValue} id="agency-fraction">{results.agencyFraction}</p>
             {/*<label for="agent-fraction">Доля агента (USD)</label>*/}
             {/*<p class="result-value" id="agent-fraction"></p>*/}
             <label htmlFor="seller-fraction">Доля продавца (USD)</label>
-            <p className={styles.resultValue} id="seller-fraction"></p>
+            <p className={styles.resultValue} id="seller-fraction"> {results.sellerFraction}</p>
 
             {/*// TODO: Replace div below into other component*/}
         {/*    <div className="explanation">*/}

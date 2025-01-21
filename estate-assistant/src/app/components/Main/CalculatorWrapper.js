@@ -1,3 +1,5 @@
+"use client"
+
 import InputData from "@/app/components/Main/InputData/InputData";
 import OutputData from "@/app/components/Main/OutputData/OutputData";
 import styles from './CalculatorWrapper.module.css'
@@ -20,6 +22,13 @@ export default function CalculatorWrapper(props) {
         const flatMeterCost = getFlatMeterCost(cost, square);
         const agencyFraction = getAgencyFraction(cost, square, agencyPercent);
         const sellerFraction = cost - agencyFraction;
+
+        setResults({
+            flatMeterCost,
+            agencyPercent,
+            agencyFraction,
+            sellerFraction,
+        })
     }
 
     return(
