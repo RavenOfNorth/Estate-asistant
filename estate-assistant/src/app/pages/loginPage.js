@@ -13,7 +13,7 @@ export default function Login() {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            router.push("/dashboard"); // Редирект после успешного входа
+            router.push("/"); // Редирект после успешного входа
         } catch (err) {
             setError(err.message);
         }
