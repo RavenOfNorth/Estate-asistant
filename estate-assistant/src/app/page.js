@@ -8,7 +8,7 @@ import Calculator from "@/app/Calculator/page";
 export default function Main() {
 
     return (
-        <div class="app">
+        <div className="app">
             <Header />
             <Calculator />
         </div>

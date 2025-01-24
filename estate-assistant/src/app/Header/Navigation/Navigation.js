@@ -1,12 +1,14 @@
 import styles from './Navigation.module.css'
 
+import Link from "next/link";
+
 export default function HeaderNavigation() {
     return (
         <nav className={styles.headerNavigation}>
             <ul className={styles.navigation}>
-                <li className={styles.navigationItem}><a href="#">Main</a></li>
-                <li className={styles.navigationItem}><a href="#">Calculator</a></li>
-                <li className={styles.navigationItem}><a href="#">Contact us</a></li>
+                <li className={styles.navigationItem}><Link href="/">Main</Link></li>
+                <li className={styles.navigationItem}><Link href="/calculator">Calculator</Link></li>
+                <li className={styles.navigationItem}><Link href="/feedback">Contact us</Link></li>
             </ul>
         </nav>
     )
