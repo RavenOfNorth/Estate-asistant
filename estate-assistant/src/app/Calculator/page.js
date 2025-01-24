@@ -1,7 +1,7 @@
 "use client"
 
-import InputData from "@/app/components/Calculator/InputData/InputData";
-import OutputData from "@/app/components/Calculator/OutputData/OutputData";
+import InputData from "@/app/Calculator/InputData/InputData";
+import OutputData from "@/app/Calculator/OutputData/OutputData";
 import styles from './Calculator.module.css'
 import {useState} from "react";
 

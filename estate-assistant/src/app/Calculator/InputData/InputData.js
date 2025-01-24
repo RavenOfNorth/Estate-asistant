@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from 'react'
-import {getUsdExchangeRate} from "@/app/parser/CurrencyParser/CurrencyParser";
+import {getUsdExchangeRate} from "@/app/core/parser/CurrencyParser/CurrencyParser";
 import styles from './InputData.module.css'
 
 export default function InputData({onCalculate}) {
