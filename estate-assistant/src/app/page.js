@@ -1,5 +1,5 @@
 import Header from "@/app/Header/page";
-import Calculator from "@/app/Calculator/page";
+import Calculator from "@/app/components/Calculator/Calculator";
 
 
 
