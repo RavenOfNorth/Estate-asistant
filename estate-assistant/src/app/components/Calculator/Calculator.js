@@ -1,14 +1,14 @@
 "use client"
 
-import InputData from "@/app/components/Main/InputData/InputData";
-import OutputData from "@/app/components/Main/OutputData/OutputData";
-import styles from './CalculatorWrapper.module.css'
+import InputData from "@/app/components/Calculator/InputData/InputData";
+import OutputData from "@/app/components/Calculator/OutputData/OutputData";
+import styles from './Calculator.module.css'
 import {useState} from "react";
 
 import {defaultAgencyPercent, getAgencyFraction, getFlatMeterCost} from "@/app/core/data/AgencyData";
 
 
-export default function CalculatorWrapper(props) {
+export default function Calculator(props) {
 
     const [results, setResults] = useState({
         flatMeterCost: 0,
