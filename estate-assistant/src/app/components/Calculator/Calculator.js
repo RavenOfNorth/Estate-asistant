@@ -8,7 +8,7 @@ import {useState} from "react";
 import {defaultAgencyPercent, getAgencyFraction, getFlatMeterCost} from "@/app/core/data/AgencyData";
 
 
-export default function Calculator(props) {
+export default function Calculator() {
 
     const [results, setResults] = useState({
         flatMeterCost: 0,
