@@ -4,12 +4,6 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import 'dotenv/config'
 
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-
-
 const firebaseConfig = {
     apiKey: process.env.AUTH_DB_API_KEY,
     authDomain: process.env.AUTH_DOMAIN,
@@ -20,7 +14,6 @@ const firebaseConfig = {
     measurementId: process.env.AUTH_MEASSURMENT_ID
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app)
