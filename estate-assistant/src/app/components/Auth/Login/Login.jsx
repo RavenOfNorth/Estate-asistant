@@ -1,6 +1,9 @@
+"use client"
+
+import styles from './Login.module.css';
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import {auth} from "../../../../../lib/auth/db";
+import { auth } from "../../../../../lib/auth/db";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -18,21 +21,23 @@ export default function Login() {
     };
 
     return (
-        <form onSubmit={handleSignIn}>
+        <form onSubmit={handleSignIn} className={styles.form}>
             <input
                 type="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className={styles.input}
             />
             <input
                 type="password"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className={styles.input}
             />
-            <button type="submit">Sign In</button>
-            {error && <p>{error}</p>}
+            <button type="submit" className={styles.button}>Sign In</button>
+            {error && <p className={styles.error}>{error}</p>}
         </form>
     );
 }
