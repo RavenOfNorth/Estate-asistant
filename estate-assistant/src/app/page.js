@@ -1,14 +1,10 @@
-import Calculator from "@/app/components/Calculator/Calculator";
-
-
-
-
+import Welcome from "@/app/components/Welcome/Welcome";
 
 export default function Main() {
 
     return (
         <div className="app">
-            <Calculator />
+            <Welcome />
         </div>
     )
 }
