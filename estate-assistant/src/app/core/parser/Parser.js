@@ -1,4 +1,4 @@
-import {getUsdExchangeRate} from "@/app/parser/CurrencyParser/CurrencyParser";
+import {getUsdExchangeRate} from "@/app/core/parser/CurrencyParser/CurrencyParser";
 
 async function parser() {
     let usdRate = 0
