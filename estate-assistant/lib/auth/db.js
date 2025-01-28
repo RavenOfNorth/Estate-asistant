@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 import 'dotenv/config'
 
 const firebaseConfig = {
-    apiKey: process.env.AUTH_DB_API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.AUTH_PROJECT_ID,
-    storageBucket: process.env.AUTH_STORAGE_BUCKET,
-    messagingSenderId: process.env.AUTH_MESSAGING_SENDER_ID,
-    appId: process.env.AUTH_APP_ID,
-    measurementId: process.env.AUTH_MEASSURMENT_ID
+    apiKey: process.env.NEXT_PUBLIC_AUTH_DB_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_AUTH_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_AUTH_STORAGE_BUCKET,
+    messagingSenderId: process.env.ANEXT_PUBLIC_UTH_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_AUTH_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_AUTH_MEASSURMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
