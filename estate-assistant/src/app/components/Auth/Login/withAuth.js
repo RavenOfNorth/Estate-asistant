@@ -12,6 +12,7 @@ const withAuth = (WrappedComponent) => {
 
         useEffect(() => {
             const unsubscribe = onAuthStateChanged(auth, (user) => {
+                console.log("Auth State Changed:", user); // ✅ Логирование
                 if (!user) {
                     router.push("/login"); // Если НЕ авторизован — редирект
                 }
