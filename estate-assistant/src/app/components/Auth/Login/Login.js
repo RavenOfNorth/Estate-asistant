@@ -22,7 +22,7 @@ export default function Login() {
             console.log("✅ User signed in:", auth.currentUser);
 
             if (auth.currentUser) {
-                router.refresh(); // ✅ Принудительное обновление страницы
+                router.refresh();
                 router.push("/calculator");
             } else {
                 console.log("⚠️ User is null after login, waiting 1 sec...");
