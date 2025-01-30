@@ -1,5 +1,3 @@
-"use client"
-
 import InputData from "@/app/components/Calculator/InputData/InputData";
 import OutputData from "@/app/components/Calculator/OutputData/OutputData";
 import withAuth from "@/app/api/auth/withAuth";
