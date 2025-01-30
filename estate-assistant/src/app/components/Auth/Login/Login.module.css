@@ -22,14 +22,14 @@
 }
 
 .input:focus {
-    border-color: #0070f3;
+    border-color: #1d1f22;
     outline: none;
-    box-shadow: 0 0 6px rgba(0, 112, 243, 0.4);
+    box-shadow: 0 0 6px rgba(14, 18, 23, 0.4);
 }
 
 .button {
     padding: 12px 20px;
-    background: linear-gradient(135deg, #0070f3, #005bb5);
+    background: linear-gradient(135deg, #37393a, #0b0c0c);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -39,7 +39,7 @@
 }
 
 .button:hover {
-    background: linear-gradient(135deg, #005bb5, #003d82);
+    background: linear-gradient(135deg, #4f5153, #131517);
     transform: scale(1.02);
 }
 
