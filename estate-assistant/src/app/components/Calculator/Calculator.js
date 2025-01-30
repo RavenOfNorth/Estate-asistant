@@ -2,13 +2,14 @@
 
 import InputData from "@/app/components/Calculator/InputData/InputData";
 import OutputData from "@/app/components/Calculator/OutputData/OutputData";
-import styles from './Calculator.module.css'
+import withAuth from "@/app/api/auth/withAuth";
+import styles from './Calculator.module.css';
 import {useState} from "react";
 
 import {defaultAgencyPercent, getAgencyFraction, getFlatMeterCost} from "@/app/core/data/AgencyData";
 
 
-export default function Calculator() {
+function Calculator() {
 
     const [results, setResults] = useState({
         flatMeterCost: 0,
@@ -40,3 +41,5 @@ export default function Calculator() {
         </main>
     )
 }
+
+export default withAuth(Calculator);
