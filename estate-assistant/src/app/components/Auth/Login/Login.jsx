@@ -2,6 +2,7 @@
 
 import styles from './Login.module.css';
 import { useState } from "react";
+import {useRouter} from "next/navigation";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../../../lib/auth/db";
 
@@ -9,6 +10,8 @@ export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
+
+    const router = useRouter();
 
     const handleSignIn = async (e) => {
         e.preventDefault();
