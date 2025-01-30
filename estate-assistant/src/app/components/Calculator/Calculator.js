@@ -2,7 +2,7 @@
 
 import InputData from "@/app/components/Calculator/InputData/InputData";
 import OutputData from "@/app/components/Calculator/OutputData/OutputData";
-import withAuth from "@/app/api/auth/withAuth";
+import withAuth from "@/app/components/Auth/Login/withAuth";
 import styles from './Calculator.module.css';
 import {useState} from "react";
 

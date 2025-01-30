@@ -3,7 +3,7 @@
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {onAuthStateChanged} from "firebase/auth";
-import {auth} from "../../../../lib/auth/db";
+import {auth} from "../../../../../lib/auth/db";
 
 const withAuth = (WrappedComponent) => {
     return function ProtectedRoute(props) {
