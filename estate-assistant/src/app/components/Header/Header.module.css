@@ -11,10 +11,10 @@
     z-index: 10;
 }
 
-.logo {
+.logo a {
+    text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 800;
     color: #ffaf00;
-    text-decoration: none;
 }
