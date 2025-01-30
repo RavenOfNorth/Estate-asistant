@@ -12,9 +12,7 @@ const withAuth = (WrappedComponent) => {
         const [isAuthenticated, setIsAuthenticated] = useState(false);
 
         useEffect(() => {
-            console.log("🔄 Checking auth state...");
             const unsubscribe = onAuthStateChanged(auth, (user) => {
-                console.log("👤 Auth state changed:", user);
                 if (user) {
                     setIsAuthenticated(true);
                 } else {
@@ -29,11 +27,9 @@ const withAuth = (WrappedComponent) => {
         if (loading) return <p>Loading...</p>;
 
         if (!isAuthenticated) {
-            console.log("🔴 User not authenticated, returning null.");
             return null;
         }
 
-        console.log("✅ User authenticated, rendering component.");
         return <WrappedComponent {...props} />;
     };
 };

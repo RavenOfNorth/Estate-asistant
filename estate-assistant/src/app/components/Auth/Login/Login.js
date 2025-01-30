@@ -19,20 +19,17 @@ export default function Login() {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            console.log("✅ User signed in:", auth.currentUser);
 
             if (auth.currentUser) {
                 router.refresh();
                 router.push("/calculator");
             } else {
-                console.log("⚠️ User is null after login, waiting 1 sec...");
                 setTimeout(() => {
                     console.log("🔄 Retrying redirect:", auth.currentUser);
                     router.push("/calculator");
                 }, 1000);
             }
         } catch (error) {
-            console.error("❌ Login error:", error);
             setError(error.message);
         }
     };
