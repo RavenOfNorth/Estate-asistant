@@ -1,7 +1,7 @@
 "use client"
 
 import {useEffect, useState} from "react";
-import {useRouter} from "next/router";
+import {useRouter} from "next/navigation";
 import {onAuthStateChanged} from "firebase/auth";
 import {auth} from "../../../../../lib/auth/db";
 
