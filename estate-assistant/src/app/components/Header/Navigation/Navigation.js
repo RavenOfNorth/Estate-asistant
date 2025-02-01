@@ -32,14 +32,18 @@ export default function HeaderNavigation() {
         <nav className={styles.headerNavigation}>
             {user ? (
                 <ul className={styles.navigation}>
-                    <li className={styles.navigationItem}><Link href="/updates">Updates</Link></li>
+                    {/*<li className={styles.navigationItem}><Link href="/updates">Updates</Link></li>*/} // TODO: work in progress
                     <li className={styles.navigationItem}><Link href="/calculator">Calculator</Link></li>
-                    <li className={styles.navigationItem}><Link href="/feedback">Contact us</Link></li>
-                    <li className={styles.navigationItem} onClick={logOutHandler}><Link href="/login">Logout</Link></li>
+                    {/*<li className={styles.navigationItem}><Link href="/feedback">Contact us</Link></li>*/} // TODO: work in progress
+                    {/*<li className={styles.navigationItem} onClick={logOutHandler}><Link href="/login">Logout</Link></li>*/} // TODO: work in progress
+                    // TODO: Create user's page in feature and protect it by withAuth func
                 </ul>
             ) : (
                 <ul className={styles.navigation}>
-                    <li className={styles.navigationItem}><Link href="/login">Login</Link></li>
+                    {/*<li className={styles.navigationItem}><Link href="/updates">Updates</Link></li>*/} // TODO: work in progress
+                    <li className={styles.navigationItem}><Link href="/calculator">Calculator</Link></li>
+                    {/*<li className={styles.navigationItem}><Link href="/feedback">Contact us</Link></li>*/} // TODO: work in progress
+                    {/*<li className={styles.navigationItem}><Link href="/login">Login</Link></li>*/} // TODO: work in progress
                 </ul>
             )}
         </nav>
